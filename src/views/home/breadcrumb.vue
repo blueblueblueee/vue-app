@@ -29,5 +29,7 @@ export default {
 </script>
 
 <style>
-
+.el-breadcrumb{
+  line-height: 3;
+}
 </style>
