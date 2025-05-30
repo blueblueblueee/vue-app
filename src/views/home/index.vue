@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div id="module">
         <el-container>
             <NavMenu />
             <el-container>

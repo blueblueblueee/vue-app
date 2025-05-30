@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+/* 登录 */
 .login{
     background: url(../img/star-2.png) no-repeat;
     width: 100%;
@@ -26,5 +27,33 @@
     margin: 20px 0;
 }
 .login .login-btn{
+    margin-left: -70px;
+}
+
+/* 注册 */
+.register {
+    background: url(../img/star-1.png) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.register-content{
+    background-color: #fff;
+    width: 45vh;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px 2px rgb(0, 0, 0,.3);
+    position:relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.register .register-title{
+    font-size: 20px;
+    border: none;
+    margin: 20px 0;
+}
+.register .save-btn{
     margin-left: -70px;
 }

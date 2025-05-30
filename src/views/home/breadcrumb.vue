@@ -15,7 +15,7 @@ export default {
         }
     },
     methods:{
-
+      
     },
     watch:{
       $route(to,from){

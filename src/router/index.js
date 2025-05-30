@@ -18,6 +18,11 @@ const routes = [
     component: () => import('../views/login/index.vue')
   },
   {
+    path: '/register',
+    name: 'register',
+    component: () => import('../views/register/index.vue')
+  },
+  {
     path: '/home',
     name: 'home',
     meta:{title:'首页'},

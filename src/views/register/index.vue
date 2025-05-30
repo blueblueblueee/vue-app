@@ -1,19 +1,18 @@
 <template>
-    <div class="login">
-        <div class="login-content">
-            <p class="login-title">后台管理系统</p>
-            <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="70px" class="demo-ruleForm">
+    <div class="register">
+        <div class="register-content">
+            <p class="register-title">注册</p>
+            <el-form :model="registerForm" :rules="rules" ref="registerForm" label-width="70px" class="demo-registerForm">
                 <el-form-item label="用户名" prop="name">
-                    <el-input v-model="ruleForm.name"></el-input>
+                    <el-input v-model="registerForm.name" placeholder="请输入用户名"></el-input>
                 </el-form-item>
-
                 <el-form-item label="密码" prop="password">
-                    <el-input type="password" v-model="ruleForm.password"></el-input>
+                    <el-input v-model="registerForm.password" type="password" placeholder="请输入密码"></el-input>
                 </el-form-item>
 
                 <el-form-item>
-                    <el-button type="primary" class="login-btn" @click="submitForm('ruleForm')">登录</el-button>
-                    <el-button type="primary" class="register-btn" @click="goRegister()">注册</el-button>
+                    <el-button type="primary" class="save-btn" @click="submitForm('registerForm')">保存</el-button>
+                    <el-button type="primary" class="cancel-btn" @click="cancelRegister()">取消</el-button>
                 </el-form-item>
 
             </el-form>
@@ -25,7 +24,7 @@
 export default {
     data(){
         return {
-            ruleForm:{
+            registerForm:{
                 name:'',
                 password:''
             },
@@ -43,10 +42,10 @@ export default {
     },
     methods:{
         submitForm(){
-            this.$router.push('/home');            
+            this.$router.push('/login');            
         },
-        goRegister(){
-            this.$router.push('/register');
+        cancelRegister(){
+            this.$router.push('/login');
         }
     }
 }
